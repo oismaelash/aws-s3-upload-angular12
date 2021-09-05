@@ -1,3 +1,6 @@
+## Sample repository
+- https://www.npmjs.com/package/aws-s3-upload-ash
+
 # AwsS3UploadAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
