@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import AWSS3UploadAshClient from 'aws-s3-upload-ash';
-import { UploadResponse } from '../../../../backend/aws-s3-upload-ash/dist/types';
+import { UploadResponse } from 'aws-s3-upload-ash/dist/types';
 import { environment } from './../environments/environment';
 
 @Component({
@@ -26,11 +26,11 @@ export class AppComponent {
     this.fileSelected = event.target.files[0]
   }
 
-  handleSendFile() {
+  async handleSendFile() {
     console.log(environment)
     console.log("handleSendFile")
-    this.S3CustomClient
-      .uploadFile(this.fileSelected, this.fileSelected.type, undefined, this.fileSelected.name, "authenticated-read")
+    await this.S3CustomClient
+      .uploadFile(this.fileSelected, this.fileSelected.type, undefined, this.fileSelected.name, "private")
       .then((data: UploadResponse) => console.log(data))
       .catch((err: any) => console.error(err))
   }

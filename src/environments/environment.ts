@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  AWS_ACCESS_KEY: "AKIASXQVJM56WXY6HRZH",
-  AWS_SECRET_KEY: "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"
+  AWS_ACCESS_KEY: "",
+  AWS_SECRET_KEY: ""
 };
 
 /*
