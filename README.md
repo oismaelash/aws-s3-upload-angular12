@@ -4,6 +4,9 @@
 ## Demo
 - https://awss3uploadash.ismaelnascimento.com
 
+## Video
+- https://youtu.be/LV1U_1G0vYs
+
 # AwsS3UploadAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
